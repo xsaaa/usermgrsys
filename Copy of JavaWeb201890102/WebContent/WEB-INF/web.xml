@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Copy of JavaWeb201890102</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+     <servlet-name>FirstServlet</servlet-name>
+     <servlet-class>cn.edu.lingnanFirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FirstServlet</servlet-name>
+     <url-pattern>/firstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>LoginServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+     <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+   <filter-name>AuthorityFilter</filter-name>
+   <filter-class>cn.edu.lingnan.filter.AuthorityFilter</filter-class>
+    </filter>
+   <filter-mapping>
+   <filter-name>AuthorityFilter</filter-name>
+   <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
+  
+  
+ <!-- 2018.04.23siming xu -->
+ <servlet>
+     <servlet-name>RegisterServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>RegisterServlet</servlet-name>
+     <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 2018.05.07siming xu -->
+ <servlet>
+     <servlet-name>LogoutServer</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.LogoutServer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>LogoutServer</servlet-name>
+     <url-pattern>/logoutServer</url-pattern>
+  </servlet-mapping>
+ 
+ <!-- 2018.05.07siming xu -->
+ <servlet>
+     <servlet-name>FindAllUser</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindAllUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindAllUser</servlet-name>
+     <url-pattern>/admin/findAllUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>FindSomeUser</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindSomeUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindSomeUser</servlet-name>
+     <url-pattern>/admin/findSomeUser</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 2018.05.09siming xu -->
+ <servlet>
+     <servlet-name>DeleteUsersServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteUsersServlet</servlet-name>
+     <url-pattern>/admin/deleteUsersServlet</url-pattern>
+  </servlet-mapping>
+  
+   <!-- 2018.05.10siming xu -->
+ <servlet>
+     <servlet-name>UpdateUsersServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.UpdateUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UpdateUsersServlet</servlet-name>
+     <url-pattern>/admin/updateUsersServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 2018.05.29siming xu -->
+ <servlet>
+     <servlet-name>DeleteBillServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteBillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteBillServlet</servlet-name>
+     <url-pattern>/admin/deleteBillServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>FindAllBill</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindAllBill</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindAllBill</servlet-name>
+     <url-pattern>/admin/findAllBill</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>FindSomeBill</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindSomeBill</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindSomeBill</servlet-name>
+     <url-pattern>/admin/findSomeBill</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>UpdateBillServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.UpdateBillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UpdateBillServlet</servlet-name>
+     <url-pattern>/admin/updateBillServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>DeleteWarehouseServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteWarehouseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteWarehouseServlet</servlet-name>
+     <url-pattern>/admin/deleteWarehouseServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>FindAllWarehouse</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindAllWarehouse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindAllWarehouse</servlet-name>
+     <url-pattern>/admin/findAllWarehouse</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>UpdateWarehouseServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.UpdateWarehouseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UpdateWarehouseServlet</servlet-name>
+     <url-pattern>/admin/updateWarehouseServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 2018.05.30siming xu -->
+ <servlet>
+     <servlet-name>DeleteWaterticketServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteWaterticketServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteWaterticketServlet</servlet-name>
+     <url-pattern>/admin/deleteWaterticketServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>FindAllWaterticket</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindAllWaterticket</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindAllWaterticket</servlet-name>
+     <url-pattern>/admin/findAllWaterticket</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>FindAllWaterticket2</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindAllWaterticket2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindAllWaterticket2</servlet-name>
+     <url-pattern>/admin/findAllWaterticket2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>UpdateWaterticketServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.UpdateWaterticketServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UpdateWaterticketServlet</servlet-name>
+     <url-pattern>/admin/updateWaterticketServlet</url-pattern>
+  </servlet-mapping>
+  
+   <!-- 2018.06.01siming xu -->
+ <servlet>
+     <servlet-name>InsertWaterticketServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.InsertWaterticketServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>InsertWaterticketServlet</servlet-name>
+     <url-pattern>/admin/insertWaterticketServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>InsertBillServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.InsertBillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>InsertBillServlet</servlet-name>
+     <url-pattern>/admin/insertBillServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>InsertBillServlet2</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.InsertBillServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>InsertBillServlet2</servlet-name>
+     <url-pattern>/admin/insertBillServlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>InsertWarehouseServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.InsertWarehouseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>InsertWarehouseServlet</servlet-name>
+     <url-pattern>/admin/insertWarehouseServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- 2018.06.04siming xu -->
+ <servlet>
+     <servlet-name>DeleteCheckbillServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteCheckbillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteCheckbillServlet</servlet-name>
+     <url-pattern>/admin/deleteCheckbillServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>DeleteCheckServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteCheckServlet</servlet-name>
+     <url-pattern>/admin/deleteCheckServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>DeleteCheckWarehouseServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteCheckWarehouseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteCheckWarehouseServlet</servlet-name>
+     <url-pattern>/admin/deleteCheckWarehouseServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>DeleteCheckWaterticketServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.DeleteCheckWaterticketServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteCheckWaterticketServlet</servlet-name>
+     <url-pattern>/admin/deleteCheckWaterticketServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>NameCheckServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.NameCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>NameCheckServlet</servlet-name>
+     <url-pattern>/nameCheckServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 2018.06.10.simingxu -->
+  <servlet>
+     <servlet-name>FindSomeUsersServlet</servlet-name>
+     <servlet-class>cn.edu.lingnan.servlet.FindSomeUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FindSomeUsersServlet</servlet-name>
+     <url-pattern>/admin/findSomeUsersServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- 2018.05.20siming xu -->
+  <filter>
+   <filter-name>CharacterEncodingFilter</filter-name>
+   <filter-class>cn.edu.lingnan.filter.CharacterEncodingFilter</filter-class>
+   
+   <init-param>
+     <description>hskjdscsd</description>
+     <param-name>encoding</param-name>
+     <param-value>GB2312</param-value>
+     
+   </init-param>
+   
+    </filter>
+   <filter-mapping>
+   <filter-name>CharacterEncodingFilter</filter-name>
+   <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
